@@ -1,0 +1,14 @@
+html
+  head
+    link(rel="stylesheet" href="style.css")
+    title= "Smart Home 2016"
+    script(src='socket.io.js')
+    script.
+      var socket = io();
+      socket.on('news', function(data){
+        console.log('ich habe verstanden');
+        console.log(JSON.stringify(data, null, 4));
+      });
+  body
+    h1= "Hier entsteht ein neue Plattform"
+    h2= hans
